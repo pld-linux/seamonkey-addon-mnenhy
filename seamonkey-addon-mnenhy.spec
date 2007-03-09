@@ -2,6 +2,7 @@
 %define		_realname	mnenhy
 
 Summary:	MailNews-Enhancements
+Summary(pl.UTF-8):	Rozszerzenia MailNews
 Name:		seamonkey-addon-%{_realname}
 Version:	0.7.5
 Release:	0.1
@@ -22,6 +23,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The primary goal of the Mnenhy project is to make some enhancements to
+SeaMonkey/Mozilla MailNews.
+
+%description -l pl.UTF-8
+Głównym celem projektu Mnenhy jest tworzenie rozszerzeń do klienta
 SeaMonkey/Mozilla MailNews.
 
 %prep
