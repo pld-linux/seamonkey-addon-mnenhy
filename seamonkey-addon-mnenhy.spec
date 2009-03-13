@@ -4,12 +4,12 @@
 Summary:	MailNews-Enhancements
 Summary(pl.UTF-8):	Rozszerzenia MailNews
 Name:		seamonkey-addon-%{_realname}
-Version:	0.7.5
+Version:	0.7.6
 Release:	0.1
 License:	MPL 1.1/GPL 2.0/LGPL 2.1
 Group:		X11/Applications/Networking
 Source0:	http://downloads.mozdev.org/mnenhy/%{_realname}-%{version}.xpi
-# Source0-md5:	7e52b71b80d48c5271b77542999a44e7
+# Source0-md5:	6fdda0ca6a830bb9167b7474924c8341
 Source1:	gen-installed-chrome.sh
 URL:		http://mnenhy.mozdev.org/
 BuildRequires:	unzip
