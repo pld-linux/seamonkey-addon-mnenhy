@@ -53,10 +53,12 @@ install %{_realname}-installed-chrome.txt $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/seamonkey-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/seamonkey-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/seamonkey-chrome+xpcom-generate
+[ ! -x %{_sbindir}/seamonkey-chrome+xpcom-generate ] || %{_sbindir}/seamonkey-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
